@@ -1,0 +1,129 @@
+body{
+    width: 500px;
+}
+.main-container{
+    display: flex;
+    width: 90rem;
+    height: 50rem;
+    grid-template-columns: 100px 100px;
+    grid-template-areas: "image loginsection";
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 280px;
+    border: lightslategray 20px solid;
+}
+
+h4{
+    text-align: center;
+}
+.image-section{
+    grid-area: image;
+    object-fit: cover;
+    width: 100%;
+    margin-top: 7px;
+}
+#bird-image{
+    width: 43rem;
+    height: 46rem;
+}
+.login-section{
+    grid-area: loginsection;
+    width: 45rem;
+    margin-right: 8rem;
+
+
+}
+#forget-password{
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-signin{
+    background-color: #696969;
+    border: 0;
+}
+.btn-google{
+    width: 20px;
+}
+
+h6 {
+    overflow: hidden;
+    text-align: center;
+}
+
+h6:before,
+h6:after {
+    background-color: #ececec;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h6:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h6:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+#button{
+    text-align: center;
+    cursor: pointer;
+}
+#signgoogle{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.endig-text{
+    font-size: 1.2rem;
+
+}
+#ending-text{
+    text-align: center;
+}
+.underlined-text{
+    text-decoration-line: underline;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+@media screen and (max-width: 400px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        height: 20rem;
+        margin: 20rem 10rem 10rem 10rem;
+        border: hidden;
+
+    }
+    .image-section{
+        display: none;
+    }
+
+    .login-section{
+        padding: 10rem 10rem 25rem 10rem;
+        background: rgb(227,2,100);
+        background: linear-gradient(90deg, rgba(227,2,100,1) 0%, rgba(37,113,152,1) 100%);
+        /*margin: 0 auto;*/
+        color: black;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        margin-top: 15rem;
+    }
+    .btn-signin{
+        background-color: lavender;
+        color: black;
+    }
+}
